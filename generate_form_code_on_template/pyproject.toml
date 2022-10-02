@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "test"
+version = "1"
+description = ""
+authors = ["arunvemana <arunsai4b6@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.85.0"
+Jinja2 = "^3.1.2"
+Starlette-WTF = "^0.4.3"
+uvicorn = "^0.18.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

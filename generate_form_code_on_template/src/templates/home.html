@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample form page</title>
+</head>
+<body>
+<form method="post" novalidate>
+    {% for key in form %}
+        <div>{{key}}</div>
+        {% if key.errors -%}
+        <span>{{key.errors[0]}}</span>
+        {%- endif %}
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
